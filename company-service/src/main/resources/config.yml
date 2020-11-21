@@ -1,0 +1,19 @@
+pingResponse: "Pong!"
+swagger:
+  resourcePackage: com.example.vipul.service.web
+  contact: vipul.vitak@gmail.com
+server:
+  maxThreads: 200
+  minThreads: 200
+  type: default
+  applicationContextPath: /ffb-tijori
+  adminContextPath: /admin
+  applicationConnectors:
+    - type: http
+      port: 9290
+      acceptQueueSize: 200
+      acceptorThreads: 4
+      selectorThreads: 8
+  adminConnectors:
+    - type: http
+      port: 9291
